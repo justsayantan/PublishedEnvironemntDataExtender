@@ -40,7 +40,7 @@ namespace PublishedEnvironmentDataExtender
                 }
                 catch (Exception ex)
                 {
-                    Trace.TraceError("ProcessResponseEXCEPTION " + "ProcessResponse" + ex.Message + "Stack Trace" + ex.StackTrace);
+                    Trace.TraceError("Exception In Process Response:" + "ProcessResponse" + ex.Message + "Stack Trace" + ex.StackTrace);
                 }
             }
             return xReader;
