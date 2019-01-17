@@ -21,8 +21,10 @@ namespace PublishedEnvironmentDataExtender.Utility
                 }
             };
 
-            var remoteAddress = new EndpointAddress("net.tcp://localhost:2660/CoreService/201603/netTcp");
+           // var remoteAddress = new EndpointAddress("net.tcp://localhost:2660/CoreService/201603/netTcp");
+            var remoteAddress = new EndpointAddress("net.tcp://localhost:2660/CoreService/201701/netTcp");
             _client = new SessionAwareCoreServiceClient(netTcpBinding, remoteAddress);
+           // _client.Impersonate("WIN-L1H2EQ83AOO\\Administrator");
         }
 
         public void Dispose()

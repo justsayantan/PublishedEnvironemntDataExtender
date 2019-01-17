@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PublishedEnvironmentDataExtender</RootNamespace>
     <AssemblyName>PublishedEnvironmentDataExtender</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,19 +43,19 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="Tridion.Common">
-      <HintPath>..\_reference\Tridion.Common.dll</HintPath>
+      <HintPath>..\_reference\Sites 9\Tridion.Common.dll</HintPath>
     </Reference>
     <Reference Include="Tridion.ContentManager">
-      <HintPath>..\_reference\Tridion.ContentManager.dll</HintPath>
+      <HintPath>..\_reference\Sites 9\Tridion.ContentManager.dll</HintPath>
     </Reference>
     <Reference Include="Tridion.ContentManager.CoreService.Client">
-      <HintPath>..\_reference\Tridion.ContentManager.CoreService.Client.dll</HintPath>
+      <HintPath>..\_reference\Sites 9\Tridion.ContentManager.CoreService.Client.dll</HintPath>
     </Reference>
     <Reference Include="Tridion.Web.UI.Core">
-      <HintPath>..\_reference\Tridion.Web.UI.Core.dll</HintPath>
+      <HintPath>..\_reference\Sites 9\Tridion.Web.UI.Core.dll</HintPath>
     </Reference>
     <Reference Include="Tridion.Web.UI.DataExtenders">
-      <HintPath>..\_reference\Tridion.Web.UI.DataExtenders.dll</HintPath>
+      <HintPath>..\_reference\Sites 9\Tridion.Web.UI.DataExtenders.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -63,7 +64,7 @@
     <Compile Include="Utility\CoreServiceUtility.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DataExtender.config">
+    <None Include="Configuration\DataExtender.config">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

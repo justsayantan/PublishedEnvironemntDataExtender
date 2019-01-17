@@ -12,10 +12,7 @@ C:\Office\D\Projects\Toshiba\PublishedEnvironmentDataExtender\PublishedEnvironme
 C:\Office\D\Projects\Toshiba\PublishedEnvironmentDataExtender\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.dll
 C:\Office\D\Projects\Toshiba\PublishedEnvironmentDataExtender\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.pdb
 C:\Office\D\Projects\Toshiba\PublishedEnvironmentDataExtender\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.csprojAssemblyReference.cache
-C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.csprojAssemblyReference.cache
 C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.csproj.CoreCompileInputs.cache
-C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.dll
-C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.pdb
 C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\bin\Debug\PublishedEnvironmentDataExtender.dll
 C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\bin\Debug\PublishedEnvironmentDataExtender.pdb
 C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\bin\Debug\Tridion.Common.dll
@@ -23,6 +20,19 @@ C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnviron
 C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\bin\Debug\Tridion.ContentManager.dll
 C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\bin\Debug\Tridion.Web.UI.Core.dll
 C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\bin\Debug\Tridion.Web.UI.DataExtenders.dll
-C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\bin\Debug\Tridion.ContentManager.CoreService.Client.xml
-C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\bin\Debug\Tridion.ContentManager.CoreService.Client.dll.config
+C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.csprojAssemblyReference.cache
 C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.csproj.CopyComplete
+C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.dll
+C:\Office\D\Custom Project\PublishedEnvironmentDataExtender\src\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.pdb
+C:\Office\D\Custom Project\DataExtender\PublishedEnvironmentDataExtender\bin\Debug\PublishedEnvironmentDataExtender.dll
+C:\Office\D\Custom Project\DataExtender\PublishedEnvironmentDataExtender\bin\Debug\PublishedEnvironmentDataExtender.pdb
+C:\Office\D\Custom Project\DataExtender\PublishedEnvironmentDataExtender\bin\Debug\Tridion.Common.dll
+C:\Office\D\Custom Project\DataExtender\PublishedEnvironmentDataExtender\bin\Debug\Tridion.ContentManager.CoreService.Client.dll
+C:\Office\D\Custom Project\DataExtender\PublishedEnvironmentDataExtender\bin\Debug\Tridion.ContentManager.dll
+C:\Office\D\Custom Project\DataExtender\PublishedEnvironmentDataExtender\bin\Debug\Tridion.Web.UI.Core.dll
+C:\Office\D\Custom Project\DataExtender\PublishedEnvironmentDataExtender\bin\Debug\Tridion.Web.UI.DataExtenders.dll
+C:\Office\D\Custom Project\DataExtender\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.csprojAssemblyReference.cache
+C:\Office\D\Custom Project\DataExtender\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.csproj.CoreCompileInputs.cache
+C:\Office\D\Custom Project\DataExtender\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.csproj.CopyComplete
+C:\Office\D\Custom Project\DataExtender\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.dll
+C:\Office\D\Custom Project\DataExtender\PublishedEnvironmentDataExtender\obj\Debug\PublishedEnvironmentDataExtender.pdb

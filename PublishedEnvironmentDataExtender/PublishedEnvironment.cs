@@ -50,7 +50,6 @@ namespace PublishedEnvironmentDataExtender
         {
             TextWriter sWriter = new StringWriter();
             XmlTextWriter xWriter = new XmlTextWriter(sWriter);
-            // Get the unique identifier of the current item.
 
             xReader.MoveToContent();
 
@@ -68,8 +67,7 @@ namespace PublishedEnvironmentDataExtender
                                 using (var client = new CoreServiceUtility())
                                 {
 
-                                    string id = xReader.GetAttribute("ID");
-                                   // Trace.TraceError($"Traced item id: {id}");
+                                    string id = xReader.GetAttribute("ID"); // Get the id of item from List 
                                     string catman = "catman-";
                                     string bptman = "bptman-";
                                     if (id.StartsWith(catman))
@@ -81,6 +79,7 @@ namespace PublishedEnvironmentDataExtender
                                         id = id.ToString().Replace(bptman, string.Empty);
                                     }
                                     TcmUri uri = new TcmUri(id);
+									// Validate the the types of items
                                     if (uri.ItemType == ItemType.Component || uri.ItemType == ItemType.Page || uri.ItemType == ItemType.StructureGroup || uri.ItemType == ItemType.Category)
                                     {
                                         string publishedCotexts = null;
@@ -88,14 +87,14 @@ namespace PublishedEnvironmentDataExtender
                                         try
                                         {
                                             var publishInfo = client.GetListPublishInfo(id);
-                                            //Trace.TraceError($"Published Info: {publishInfo.Count()}");
+                                            //Validate item is published
                                             if (publishInfo.Count() > 0)
                                             {
                                                 foreach (var info in publishInfo)
                                                 {
                                                     if (!String.IsNullOrEmpty(info.TargetPurpose))
                                                     {
-                                                        //Trace.TraceError($"TargetInfo: {info.TargetPurpose} --> {id}");
+														//Validate item is published from current publication
                                                         if(client.IsPublished(id, info.TargetPurpose))
                                                         {
                                                             publishedPurposeList.Add(info.TargetPurpose);
@@ -106,19 +105,24 @@ namespace PublishedEnvironmentDataExtender
                                                         Trace.TraceError($"TargetInfo is NUll");
                                                     }
                                                 }
+
+                                                if (publishedPurposeList.Count > 0)
+                                                {
+                                                    publishedCotexts = String.Join(",", publishedPurposeList.Distinct());
+                                                    xWriter.WriteAttributeString("PublishedTo", publishedCotexts); // Add the data into the list
+                                                }
+                                                else
+                                                {
+                                                    xWriter.WriteAttributeString("PublishedTo", "-");
+                                                }
                                             }
-                                            if(publishedPurposeList.Count>0)
-                                            {
-                                                publishedCotexts = String.Join(",", publishedPurposeList.Distinct());
-                                                xWriter.WriteAttributeString("PublishedTo", publishedCotexts);
-                                               // Trace.TraceError($"TargetInfo: {publishedCotexts}");
-                                            }else {
-                                                xWriter.WriteAttributeString("PublishedTo", "N/A");
+                                            else {
+                                                xWriter.WriteAttributeString("PublishedTo", "-");
                                             }
                                         }
                                         catch (Exception ex)
                                         {
-                                            Trace.TraceError("Exception " + ex.Message + "Stack Trace" + ex.StackTrace);
+                                            Trace.TraceError("Exception :" + ex.Message + "Stack Trace :" + ex.StackTrace);
                                         }
                                     }
                                     else {
